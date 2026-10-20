@@ -4,6 +4,7 @@ A lightweight Telegram bot for tracking domain expiration dates and reminding us
 
 ## Features
 
+- Language: Persian
 - Register one or multiple domains.
 - Retrieve expiration dates automatically via WhoAPI when available.
 - Enter expiration dates manually when automatic lookup is unavailable.
@@ -19,7 +20,8 @@ A lightweight Telegram bot for tracking domain expiration dates and reminding us
 ## Setup
 
 1. Clone this repository.
-2. Create a virtual environment and install dependencies:
+2. Change env.example to .env
+3. Create a virtual environment and install dependencies:
 
    ```bash
    python3 -m venv venv
@@ -27,7 +29,7 @@ A lightweight Telegram bot for tracking domain expiration dates and reminding us
    pip install -r requirements.txt
    ```
 
-3. Configure the environment variables:
+4. Configure the environment variables:
 
    ```env
    TELEGRAM_BOT_TOKEN=
@@ -36,8 +38,8 @@ A lightweight Telegram bot for tracking domain expiration dates and reminding us
    WARNING_DAYS=30
    ```
 
-4. Ensure `schema.sql` is present beside `bot.py`.
-5. Run the bot:
+5. Ensure `schema.sql` is present beside `bot.py`.
+6. Run the bot:
 
    ```bash
    python bot.py
